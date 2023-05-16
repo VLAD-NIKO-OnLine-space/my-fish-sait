@@ -1,0 +1,36 @@
+.h1{
+    font-family: 'Rubik Moonrocks', cursive;
+    font-size: 72px;
+    font-weight: 400;
+    letter-spacing: 0.2em;
+    cursor: pointer;
+    transition: all 0.3s;
+    text-transform: uppercase;
+    color: #fff;
+    user-select: none;
+    margin: 0;
+}
+
+.h1:hover{
+    transform: translateY(-7px) scale(103%);
+}
+
+@media (max-width: 900px){
+    .h1{
+        font-size: 56px;
+    }
+}
+
+@media (max-width: 681px){
+    .h1{
+        font-size: 46px;
+        cursor: none;
+    }
+}
+
+@media (max-width: 508px){
+    .h1{
+        font-size: 32px;
+    }
+}
+

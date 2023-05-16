@@ -1,0 +1,45 @@
+.container{
+    position: fixed;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.7);
+    display: flex;
+    opacity: 0;
+    z-index: -10;
+    transition: all 0.3s linear;
+    
+}
+
+.content{
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 10px;
+    z-index: 50;
+    height: 140px;
+    width: 100%;
+    border-radius: 0 0 12px 12px;
+
+    background-image: url('/modalfon.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+
+
+    position: relative;  
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+
+.active{
+    display: flex;
+    opacity: 1;
+    z-index: 100;
+}
+

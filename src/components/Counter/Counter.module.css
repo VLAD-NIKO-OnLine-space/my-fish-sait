@@ -1,0 +1,33 @@
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    border-radius: 8px;
+    padding: 5px 10px;
+    gap: 10px;
+    margin-right: 10px;
+    /* border: 1px solid rgba(0,0,0,0.5); */
+    user-select: none;
+    margin-bottom: 8px;
+}
+
+.btn{
+    border: none;
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    outline: none;
+    font-size: 24px;
+    
+}
+
+.count{
+    margin: 0;
+    padding: 0;
+    color: #040404;
+}

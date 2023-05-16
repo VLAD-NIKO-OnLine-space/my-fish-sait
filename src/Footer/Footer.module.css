@@ -1,0 +1,23 @@
+.footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    padding: 30px;
+    width: 100%;
+    background-color: #fff;
+    /* bottom: -100px; */
+    bottom: 0;
+    opacity: 0.5;
+}
+
+.content{
+    display: flex;
+    align-items: center;
+
+}
+
+
+.active{
+    transform: translateY(100px)
+}
+

@@ -1,0 +1,58 @@
+.deBtn{
+    position: relative;
+    border: none;
+    padding: 7px 7px;
+    font-size: 12px;
+    letter-spacing: 0.045em;
+    text-transform: uppercase;
+    border-radius: 8px;
+    background-color: rgba(166, 43, 43, 0.9);
+    color: #fff;
+    z-index: 1;
+    /* outline: none; */
+    overflow: hidden;
+    width: 100%;
+    transition: 0.1s all linear;
+}
+
+.deBtn::before{
+    content: '';
+    top: 0;
+    left: 0;
+    border-radius: 8px;
+    position: absolute;
+    width: 10%;
+    height: 100%;
+    z-index: -1;
+    transform: translateX(-30px) skew(-35deg);
+    filter: blur(4px);
+    transition: 0.3s all linear;
+    background-color: #fff;
+    opacity: 0.3;
+}
+
+
+.deBtn::after{
+    content: '';
+    top: 0;
+    right: 0;
+    border-radius: 8px;
+    position: absolute;
+    width: 10%;
+    height: 100%;
+    z-index: -1;
+    transform: translateX(30px) skew(35deg);
+    filter: blur(4px);
+    transition: 0.3s all linear;
+    opacity: 0.3;
+    background-color: #fff;
+}
+
+.deBtn:hover::before{
+    transform: translateX(190px) skew(35deg);
+    
+}
+.deBtn:hover::after{
+    transform: translateX(-190px) skew(-35deg);
+    
+}

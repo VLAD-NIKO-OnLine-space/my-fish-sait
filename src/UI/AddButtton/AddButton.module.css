@@ -1,0 +1,35 @@
+.btn{
+    position: relative;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 5px 15px;
+    font-size: 12px;
+    border-radius: 8px;
+    background-color: rgb(61, 178, 182);
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 0.045em;
+    overflow: hidden;
+}
+
+.btn::before{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 10%;
+    height: 100%;
+    background-color: #fff;
+    border-radius: inherit;
+    transform: translateX(-20px) skew(-35deg);
+    transition: all 0.2s linear;
+    filter: blur(3px);
+    opacity: 0.7;
+}
+
+
+.btn:hover::before{
+    transform: translateX(105px) skew(-35deg);
+    
+}

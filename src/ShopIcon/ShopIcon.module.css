@@ -1,0 +1,36 @@
+.cont{
+    position: absolute;
+    top: 130px;
+    right: 25px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.icon{
+    width: 40px;
+    z-index: 48;
+    cursor: pointer;
+    filter: invert(100%);
+
+}
+.icon:hover{
+    filter: invert(100%) drop-shadow(0 0 2em #fff);
+    transform: scale(103%);
+}
+
+.count{
+    position: absolute;
+    z-index: 49;
+    top: 15px;
+    right: -7px;
+    padding: 5px 7px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 10px;
+    user-select: none;
+    background-color: brown;
+    border-radius: 50%;
+    pointer-events: none;
+}
+
